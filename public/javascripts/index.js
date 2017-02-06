@@ -3,7 +3,9 @@
 var fiveSec = moment().add(5, 'seconds');
 var fifteenSec = moment().add(15, 'seconds');
 var now = moment();
-
+// Replace the '12-25-1995' with a date matching MM-DD-YYYY. Use that date instead of the
+// fiveSec or fifteenSec type tools
+var firstSurpriseDate = moment("12-25-1995", "MM-DD-YYYY");
 
 var figureDate = function(bench, selector) {
   if (moment() >= bench) {
