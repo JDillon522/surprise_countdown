@@ -25,7 +25,8 @@ app.use(require('node-sass-middleware')({
   dest: path.join(__dirname, 'public'),
   indentedSyntax: false,
   force: true,
-  sourceMap: true
+  sourceMap: true,
+  debug:true
 }));
 
 app.use(express.static(path.join(__dirname, 'public')));
