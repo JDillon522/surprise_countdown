@@ -1,5 +1,7 @@
 // Take a look at the documentation for the Date() built in object right hurr:
 // https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date
+$.material.init()
+
 var fiveSec = moment().add(5, 'seconds');
 var fifteenSec = moment().add(15, 'seconds');
 
