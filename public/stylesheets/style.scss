@@ -1,9 +1,21 @@
 @import "flipclock";
 
-
-.hidden {
-  display: none;
+.visibleClock {
+  left: 25%;
+  right: 25%;
 }
+
+.hiddenClock {
+  display: none;
+
+  h1 {
+    color: #396;
+    font-weight: 100;
+    font-size: 30px;
+    margin: 40px 0px 20px;
+  }
+}
+
 h1, h2, p {
   text-align: center;
 }
@@ -11,49 +23,37 @@ h1, h2, p {
 #game{
   background-color: #488;
   border-radius: 25px;
+  padding-bottom: 40px;
+
+  h2, p{
+    color: beige;
+    font-weight: 100;
+  }
+
+  h2 {
+    font-size: 30px;
+  }
+
+  p {
+    font-size: 20px;
+  }
 }
 
 
-body{
-    text-align: center;
-    background: #00ECB9 !important;
+body {
+  text-align: center;
+  background: #00ECB9 !important;
   font-family: sans-serif;
   font-weight: 100;
 }
 
-.visible{
-  left: 25%;
-  right: 25%;
-}
-
-.hidden h1{
-  color: #396;
-  font-weight: 100;
-  font-size: 30px;
-  margin: 40px 0px 20px;
-}
+.hidden
 
 header h1{
   color: #396;
   font-weight: 100;
   font-size: 40px;
   padding-bottom: 30px;
-}
-
-#game h2, p{
-  color: beige;
-  font-weight: 100;
-}
-#game h2{
-  font-size: 30px;
-}
-
-#game p{
-  font-size: 20px;
-}
-
-#game{
-  padding-bottom: 40px;
 }
 
 #vacationCountdown{

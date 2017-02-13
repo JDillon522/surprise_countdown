@@ -36,8 +36,8 @@ var seventhSurpriseDiff = moment().diff(seventhSurpriseDate, 'seconds');
 
 var figureDate = function(bench, selector) {
   if (moment() >= bench) {
-    $(selector + ' .visible').hide();
-    $(selector + ' .hidden').show();
+    $(selector + ' .visibleClock').hide();
+    $(selector + ' .hiddenClock').show();
   } else {
     // console.log('WAITING on ' + selector);
   }
@@ -55,42 +55,42 @@ setInterval(function() {
   figureDate(seventhSurpriseDate, '#seventhSurprise');
 }, 1000);
 
-var clock0 = $('#vacationCountdown .visible').FlipClock(Math.abs(vacationCountdownDiff), {
+var clock0 = $('#vacationCountdown .visibleClock').FlipClock(Math.abs(vacationCountdownDiff), {
   countdown: true,
   clockFace: 'DailyCounter'
 })
 
-var clock1 = $('#firstSurprise .visible').FlipClock(Math.abs(firstSurpriseDiff), {
+var clock1 = $('#firstSurprise .visibleClock').FlipClock(Math.abs(firstSurpriseDiff), {
   countdown: true,
   clockFace: 'DailyCounter'
 })
 
-var clock2 = $('#secondSurprise .visible').FlipClock(Math.abs(secondSurpriseDiff), {
+var clock2 = $('#secondSurprise .visibleClock').FlipClock(Math.abs(secondSurpriseDiff), {
   countdown: true,
   clockFace: 'DailyCounter'
 })
 
-var clock3 = $('#thirdSurprise .visible').FlipClock(Math.abs(thirdSurpriseDiff), {
+var clock3 = $('#thirdSurprise .visibleClock').FlipClock(Math.abs(thirdSurpriseDiff), {
   countdown: true,
   clockFace: 'DailyCounter'
 })
 
-var clock4 = $('#fourthSurprise .visible').FlipClock(Math.abs(fourthSurpriseDiff), {
+var clock4 = $('#fourthSurprise .visibleClock').FlipClock(Math.abs(fourthSurpriseDiff), {
   countdown: true,
   clockFace: 'DailyCounter'
 })
 
-var clock5 = $('#fifthSurprise .visible').FlipClock(Math.abs(fifthSurpriseDiff), {
+var clock5 = $('#fifthSurprise .visibleClock').FlipClock(Math.abs(fifthSurpriseDiff), {
   countdown: true,
   clockFace: 'DailyCounter'
 })
 
-var clock6 = $('#sixthSurprise .visible').FlipClock(Math.abs(sixthSurpriseDiff), {
+var clock6 = $('#sixthSurprise .visibleClock').FlipClock(Math.abs(sixthSurpriseDiff), {
   countdown: true,
   clockFace: 'DailyCounter'
 })
 
-var clock7 = $('#seventhSurprise .visible').FlipClock(Math.abs(seventhSurpriseDiff), {
+var clock7 = $('#seventhSurprise .visibleClock').FlipClock(Math.abs(seventhSurpriseDiff), {
   countdown: true,
   clockFace: 'DailyCounter'
 })
